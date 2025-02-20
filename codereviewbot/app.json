@@ -1,15 +1,15 @@
 {
-    "id": "94d6e38c-02a2-4ced-9127-90c3fc078990",
+    "id": "9ebdf7b1-0557-46a0-a900-a166b19b2df4",
     "version": "0.0.1",
     "requiredApiVersion": "^1.44.0",
     "iconFile": "icon.png",
     "author": {
-        "name": "pavankumartaddi",
+        "name": "PavankumarTaddi",
         "homepage": "-",
         "support": "-"
     },
     "name": "codereviewbot",
     "nameSlug": "codereviewbot",
     "classFile": "CodereviewbotApp.ts",
-    "description": "reviews pull requests"
+    "description": "Reviews github pull request"
 }

@@ -7,10 +7,11 @@ COPY package.json /app
 RUN npm install
 
 ENV IN_DOCKER=true
-ENV PORT=3000
+ENV PORT=4000
+ENV TERM=xterm-256color
 
 COPY . /app
 
-EXPOSE 3000
+EXPOSE 4000
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
