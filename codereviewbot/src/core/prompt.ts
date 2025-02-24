@@ -39,19 +39,6 @@ export class Prompt {
    }
 
    /**
-    * Adds a message from the assistant to the message list.
-    *
-    * @param {string} content - The content of the message.
-    * @returns {void}
-    */
-   pushAssistant(content: string) {
-      this._messages.push({
-         role: "assistant",
-         content: this.parsePromptContent(content),
-      })
-   }
-
-   /**
     * Adds a user message to the message list.
     *
     * @param {string} content - The content of the user message.
