@@ -17,10 +17,10 @@ export class GitHubPRFetcher {
     prNumber: number;
     prTitle: string;
     prDescription: string;
-    issueNumber?: number;
-    issueTitle?: string;
-    issueDescription?: string;
-    issueUrl?: string;
+    issueNumber: number;
+    issueTitle: string;
+    issueDescription: string;
+    issueUrl: string;
     diff: string;
   }> {
     try {

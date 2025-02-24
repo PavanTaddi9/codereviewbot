@@ -18,17 +18,17 @@ export namespace PromptFactory {
 
          `)
      prompt.pushUser(
-        `Hey, I have the following pull request details along with its associated issue and code changes. Can you please analyze the PR and provide a review based on the given details?  
+         `Hey, I have the following pull request details along with its associated issue and code changes. Can you please analyze the PR and provide a review based on the given details?  
 
          ### 🔹 Pull Request Details:
-         - **PR Number:** {PR}  
-         - **PR Title:** {PRdes}  
+         - **PR title:** {PR}  
+         - **PR description:** {PRdes}  
 
          ### 🔹 Associated Issue:
-         - **Issue Number:** {issue}  
+         - **Issue title:** {issue}  
          - **Issue Description:** {issdes}  
 
-         ### 🔍 Files Changed (Git Diff)
+         ### 🔍 Files Changed {Git Diff}
          `
      )
 
