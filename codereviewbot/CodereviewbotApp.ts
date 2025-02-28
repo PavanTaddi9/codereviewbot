@@ -9,8 +9,6 @@ import {
  } from "@rocket.chat/apps-engine/definition/accessors"
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
-import { ApiSecurity, ApiVisibility } from "@rocket.chat/apps-engine/definition/api"
-import { UIKitViewSubmitInteractionContext } from "@rocket.chat/apps-engine/definition/uikit"
 import { Analysepr } from "./src/commands/Analysepr";
 export class CodereviewbotApp extends App {
     constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {

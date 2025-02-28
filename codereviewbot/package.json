@@ -1,15 +1,27 @@
 {
     "devDependencies": {
+        "@eslint/js": "^9.3.0",
         "@rocket.chat/apps-engine": "^1.44.0",
+        "@types/eslint__js": "^8.42.3",
         "@types/node": "14.14.6",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "3.2.5",
         "tslint": "^5.10.0",
-        "typescript": "^5.6.2"
+        "typescript": "^5.6.2",
+        "typescript-eslint": "^7.11.0"
     },
     "dependencies": {
         "@rocket.chat/icons": "^0.38.0",
         "@rocket.chat/ui-kit": "^0.36.1",
         "body-parser": "^1.20.3",
         "dotenv": "^16.4.7",
-        "express": "^4.21.2"
-    }
+        "express": "^4.21.2",
+        "punycode": "^2.3.1"
+    },
+    "scripts": {
+        "lint": "eslint . --fix --max-warnings=0",
+        "format": "prettier . --write"
+    },
+    "type": "commonjs"
 }

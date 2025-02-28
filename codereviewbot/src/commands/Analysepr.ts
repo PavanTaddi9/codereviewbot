@@ -3,7 +3,10 @@ import { ISlashCommand, SlashCommandContext } from "@rocket.chat/apps-engine/def
 import { PromptFactory } from "../core/promptfactory";
 import { Llama3_70B } from "../core/llm/llama3";
 import { GitHubPRFetcher } from "../core/gitpr/GitHubPRFetcher";
-require('dotenv').config();
+import * as dotenv from 'dotenv';
+
+
+dotenv.config();
 
 // Ensure environment variables are loaded correctly
 const Gittoken = process.env.GITHUB_TOKEN;
