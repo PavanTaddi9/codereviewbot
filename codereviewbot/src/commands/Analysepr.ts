@@ -17,11 +17,6 @@ export class Analysepr implements ISlashCommand {
     constructor(app: App) {
         this.app = app;
     }
-
-
-    
-
-
     private async process(
         http: IHttp,
         Gittoken: string,
@@ -56,7 +51,8 @@ export class Analysepr implements ISlashCommand {
                 .startMessage()
                 .setSender(sender)
                 .setRoom(room)
-                .setText(`✅ Analysis Result:\n${answer}`);
+                .setText(`✅ Analysis Result:\n${answer}`)
+                //.setText(`✅ Analysis Result:\n\`\`\`json\n${JSON.stringify(prompt, null, 2)}\n\`\`\``);
 
             await modify.getCreator().finish(messageBuilder);
             console.log("✅ [process] Response sent");
