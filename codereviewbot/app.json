@@ -11,5 +11,6 @@
     "name": "codereviewbot",
     "nameSlug": "codereviewbot",
     "classFile": "CodereviewbotApp.ts",
-    "description": "Reviews github pull request"
+    "description": "Reviews github pull request",
+    "implements": []
 }

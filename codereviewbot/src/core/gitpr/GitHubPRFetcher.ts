@@ -56,19 +56,18 @@ export class GitHubPRFetcher {
         data: { query }
       });
 
-      if (!response.data) {
-        throw new Error('Failed to fetch PR and issue details.');
+
+      if (!response.data || !response.data.data || !response.data.data.repository) {
+        throw new Error('Invalid response format from GitHub API.');
       }
-
       const pullRequest = response.data.data.repository.pullRequests.nodes[0];
-
       if (!pullRequest) {
         throw new Error('No open pull requests found.');
       }
 
       const issue = pullRequest.closingIssuesReferences.nodes[0];
 
-      // ✅ Fetch Git diff using GitHub REST API (Corrected)
+      
       const diffUrl = `https://api.github.com/repos/${this.owner}/${this.repo}/pulls/${pullRequest.number}`;
       const diffResponse = await this.http.get(diffUrl, {
         headers: {
